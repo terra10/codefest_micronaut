@@ -3,6 +3,8 @@
 In this lab we'll simple generate our starter projects. We'll do this via both the launcher and the 
 commandline tool.
 
+Detailed information can be found in the [official documentation](https://micronaut-projects.github.io/micronaut-starter/latest/guide/index.html#introduction)
+
 ## Create new project with launcher
 
 Go to to [Micronaut Launch](https://micronaut.io/launch/)
@@ -110,3 +112,17 @@ $ mn create-app -h
 
 The *mn* tool will offer the same features as the launch site when creating a new project, with exception 
 of the diff and preview features.
+
+### Run it
+
+You can run the generated application by executing gradlew build run from the root directory:
+````bash
+$ ./gradlew build run
+````
+
+If you use maven, you can use:
+````
+$ ./mvnw compile exec:exec
+````
+
+*You can omit the **./** when running on Windows.*
