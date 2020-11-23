@@ -33,7 +33,7 @@ Each lab wil build upon the previous one.
 
 ### Lab 4
 
-- Writing unit tests
+- Setting up monitoring and health checks
 
 ### Lab 5
 
