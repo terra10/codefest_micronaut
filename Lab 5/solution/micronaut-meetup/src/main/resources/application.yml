@@ -21,3 +21,5 @@ datasources:
     password: ""
     schema-generate: CREATE_DROP
     driverClassName: org.h2.Driver
+meetup:
+  hello-world: 'Hello World'
