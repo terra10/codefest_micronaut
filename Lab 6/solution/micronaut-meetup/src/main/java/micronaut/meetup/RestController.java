@@ -12,10 +12,12 @@ public class RestController {
 
     private JpaService jpaService;
     private MeetupConfiguration meetupConfiguration;
+    private Meetup meetup;
 
-    public RestController(JpaService jpaService, MeetupConfiguration meetupConfiguration) {
+    public RestController(JpaService jpaService, MeetupConfiguration meetupConfiguration, Meetup meetup) {
         this.jpaService = jpaService;
         this.meetupConfiguration = meetupConfiguration;
+        this.meetup = meetup;
     }
 
     @Get(uri = "/{id}", produces = "application/json")
@@ -31,6 +33,11 @@ public class RestController {
     @Get(uri = "/property/hello", processes = "text/plain")
     public String hello() {
         return meetupConfiguration.getHelloWorld();
+    }
+
+    @Get(uri = "/property/meetup", processes = "text/plain")
+    public String meetup() {
+        return meetup.getName();
     }
 
     @Post(uri = "/{id}", consumes = "application/json", produces = "application/json")
