@@ -151,3 +151,6 @@ And update the restController to use the correct getter:
 ````
 
 When you run it again, it should still return 'Hello World'
+
+More information can be found in the [documentation](https://docs.micronaut.io/latest/guide/index.html#environments)
+
