@@ -100,6 +100,9 @@ meetup:
 ````
 
 Rebuild and run, and head over to http://localhost:8080/restController/property/meetup:
+
+Note that the actual value of the property doesn't matter, just that the property exists or not.
+
 ````
 Meetup!
 ````
