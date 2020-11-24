@@ -89,6 +89,8 @@ integration with Hibernate by adding some dependencies and some lines to our con
 
 We need to add a quite a lot of dependencies, so the next listings will include the full list of depencies needed.
 
+Make sure to remove the jdbc-tomcat dependency if you've added it in the previous section.
+
 build.gradle
 ````groovy
 dependencies {
