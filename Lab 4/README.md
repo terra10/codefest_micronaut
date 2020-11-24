@@ -102,6 +102,7 @@ Lastly, we can add our @Read method. Lets just check the status of our database 
 
 ````java
     @Read
+    @Transactional
     public boolean dataSource() throws SQLException {
         return !dataSource.getConnection().isClosed();
     }
@@ -128,7 +129,7 @@ You can configure your own endpoint in a way similar to the build-in ones using 
 ````yml
 endpoints:
   database:
-    enabled: alse
+    enabled: false
 ````
 
 More information on options on the build-in endpoints and other management features can be found [here](https://docs.micronaut.io/latest/guide/index.html#management)
