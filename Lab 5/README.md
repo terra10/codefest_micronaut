@@ -1,8 +1,11 @@
-# Lab 5 - Third party support
+# Lab 5 - Working with Configuration
 
-## Spring compatibility
+In this lab we will take a look a different ways of injection properties into
+you application.
 
-## Apache Camel
+## Application.yml
 
-## GraalVM
+We have been adding configuration to the application.yml file for a while now. Until now,
+all of that configuration was used by components that where added by the Framework. We can 
+also use this same file to house your own properties
 
