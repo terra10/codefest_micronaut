@@ -41,7 +41,7 @@ Hello World
 
 ## ConfigurationClass
 
-In some scenarios it might be usefull to have your configuration available as a 
+In some scenarios it might be useful to have your configuration available as a 
 Java POJO. It is fairly easy to set this up. First, we need a class that will hold our
 configuration. Let's call it MeetupConfiguration.
 
@@ -74,6 +74,8 @@ public class MeetupConfiguration {
     }
 }
 ````
+
+*Note that you can use lombok here if you want to generate you getters and setters to remove some of the boilerplating.*
 
 Lastly, we can inject this Configuration class into our RestController:
 

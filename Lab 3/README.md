@@ -85,9 +85,10 @@ We will however not be using the datasource directly, but instead us Hibernate t
 
 [Hibernate](https://hibernate.org/) is an ORM framework that will allow us to use Java POJO's to interact
 with our database without the need to write queries. For now, that's all you need to know. Micronaut offers seamless
-ingetration with Hibernate by simple adding a dependency and some lines to our config file.
+integration with Hibernate by adding some dependencies and some lines to our config file.
 
-We need to add a quite a lot of dependencies:
+We need to add a quite a lot of dependencies, so the next listings will include the full list of depencies needed.
+
 build.gradle
 ````groovy
 dependencies {
@@ -104,7 +105,8 @@ dependencies {
     runtimeOnly("com.h2database:h2")
 }
 ````
-pom.xml
+
+pom.xml - dependencies
 ````xml
 <dependencies>
     <dependency>
@@ -178,8 +180,9 @@ pom.xml
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-<!--Under plugins, maven compiler, annotation processor, add:-->
+````
+pom.xml - plugins
+````xml
   <build>
     <plugins>
       <plugin>
@@ -240,7 +243,7 @@ Few things that are important here:
 1. The @javax.persistence.Entity annotation. This indicates that this class represents a database model
 1. The @javax.persistence.Id annotation. This flags a field or getter as a unique and primary key in the database.
 
-You can expaned the Model class to your liking, just make sure to include an @Id field.
+You can expand the Model class to your liking, just make sure to include an @Id field.
 
 We can now finish our configuration by adding the following lines to our application.yml:
 

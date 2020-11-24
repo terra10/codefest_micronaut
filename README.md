@@ -20,7 +20,7 @@ Each lab wil build upon the previous one.
 
 ### Lab 1
 
-- Getting a project setup with launch webiste and commandline tool
+- Getting a project setup with launch website and commandline tool
 - Creating new beans using the mn command
 
 ### Lab 2
@@ -29,7 +29,7 @@ Each lab wil build upon the previous one.
 
 ### Lab 3
 
-- Creating a model and connecting to a H2 database
+- Creating a model and connecting to a H2 database using Hibernate
 
 ### Lab 4
 
@@ -37,5 +37,8 @@ Each lab wil build upon the previous one.
 
 ### Lab 5
 
-- Third party support
+- Working with Configuration
 
+### Lab 6
+
+- Advanced Bean Control

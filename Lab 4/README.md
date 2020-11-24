@@ -37,7 +37,7 @@ A number of standard endpoints wil be available by default:
 - /env
 - /threaddump
 
-Let's try it real quick! Run your application and head to http://localhost:8080/health
+Let's try it real quick! Run your application and head to http://localhost:8080/health.
 
 You should see:
 ````json
@@ -45,6 +45,8 @@ You should see:
   "status": "UP"
 }
 ````
+
+Feel free to try any of the other endpoints as well.
 
 You can change the port these management endpoints run on by editing your application.yml:
 
@@ -54,7 +56,17 @@ endpoints:
         port: 8085
 ````
 
-More information on these default endpoints van de found in the [documentation](https://docs.micronaut.io/latest/guide/index.html#providedEndpoints)
+Each of the default endpoints offers a set of parameters that can be tweaked in you application.yml. They all follow the
+endpoints.{id} syntax. If we look at the beans endpoint for example, configuration can be adjused like:
+
+````yaml
+endpoints:
+    beans:
+        enabled: true
+        sensitive: false
+````
+
+More information on these default endpoints and configuration options can de found in the [documentation](https://docs.micronaut.io/latest/guide/index.html#providedEndpoints)
 
 ## Custom Endpoints
 

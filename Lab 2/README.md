@@ -140,7 +140,7 @@ Observable from your endpoint. For the full reactive experience you can also use
     }
 ````
 
-We'll not be using this for our next labs. 
+We'll however not be using this for our next labs and will continue with the more traditional Webserver setup.
 
 You can refer to the [documentation](https://docs.micronaut.io/1.3.4/guide/index.html#httpServer) for more information about setting up and configurating
 the Webserver. 
